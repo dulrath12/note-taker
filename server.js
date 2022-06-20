@@ -1,7 +1,9 @@
 const express = require('express')
 const fs = require('fs')
 const path = require('path')
-const { notes } = require('./db/db')
+const {notes}  = require('./db/db')
+
+const { v4: uuidv4 } = require('uuid')
 
 const PORT = process.env.PORT || 3001
 const app = express()
@@ -35,7 +37,7 @@ app.get('/api/notes', (req, res) => {
 })
 
 app.post('/api/notes', (req, res) => {
-    req.body.id = notes.length.toString()
+    req.body.id = uuidv4()
 
     if (!validateNote(req.body)) {
         res.status(400).send('The note is note formatted correctly')
