@@ -1,17 +1,14 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text"
+      "title": "Homework",
+      "text": "I need to finish this assignment and get it submitted.",
+      "id": "0"
     },
     {
-      "title": "asdf",
-      "text": "asdf"
-    },
-    {
-      "title": "asdfasdf",
-      "text": "asdfasdf",
-      "id": "2"
+      "title": "next",
+      "text": "next",
+      "id": "1"
     }
   ]
 }
